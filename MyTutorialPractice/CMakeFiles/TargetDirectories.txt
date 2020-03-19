@@ -1,0 +1,3 @@
+D:/Software Projects/CMake Projects/tutorial/MyTutorialPractice/CMakeFiles/CMakeTutorial.dir
+D:/Software Projects/CMake Projects/tutorial/MyTutorialPractice/CMakeFiles/edit_cache.dir
+D:/Software Projects/CMake Projects/tutorial/MyTutorialPractice/CMakeFiles/rebuild_cache.dir
