@@ -32,17 +32,18 @@ int main(int argc, char* argv[])
     std::cout<<"test array"<<std::endl;
     for(int i = 0; i<(sizeof(testArray)/sizeof(*testArray)); i++)
     {
-        std::cout<<testArray[i];
+        std::cout<<testArray[i]<< " ";
     }
     std::cout<<std::endl;
-    /*//create new list
-    std::cout<<"test list"<<std::endl;
-    std::list<int> testList (4,100);
-    for(int i = 0; i<testList.size(); i++)
-    {
-        std::cout<<testList[i];
-    }*/
+    //create new list
 
+    std::list<int> testList (testArray, testArray + sizeof(testArray) / sizeof(int) );
+    std::cout<<"test list"<<std::endl;
+     for (std::list<int>::iterator it = testList.begin(); it != testList.end(); it++)
+    {
+        std::cout<<*it << " ";
+    }
+    std::cout<<std::endl;
     //create new vector
     std::cout<<"test vector"<<std::endl;
     std::vector<int> testVect;
@@ -50,7 +51,7 @@ int main(int argc, char* argv[])
 
     for(int i = 0; i<testVect.size(); i++)
     {
-        std::cout<<testVect[i];
+        std::cout<<testVect[i]<< " ";
     }
      std::cout<<std::endl;
     return 0;
