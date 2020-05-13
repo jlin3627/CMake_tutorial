@@ -25,5 +25,6 @@ Mingw tutorial
 http://www.mingw.org/wiki/MinGW_for_First_Time_Users_HOWTO
 
 g++ helloworld.cpp -o helloworld.exe
+
 to execute in cygwin:
 ./helloworld.exe
